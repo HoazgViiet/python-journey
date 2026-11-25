@@ -10,13 +10,10 @@ tuoi = 20                   # int
 diem_tb = 8.5               # float
 dang_hoc = True             # bool
 
-for ten_bien, gia_tri in [
-    ("ten", ten),
-    ("tuoi", tuoi),
-    ("diem_tb", diem_tb),
-    ("dang_hoc", dang_hoc),
-]:
-    print(f"{ten_bien} = {gia_tri} (type: {type(gia_tri).__name__})")
+print(f"ten = {ten}, type = {type(ten).__name__}")
+print(f"tuoi = {tuoi}, type = {type(tuoi).__name__}")
+print(f"diem_tb = {diem_tb}, type = {type(diem_tb).__name__}")
+print(f"dang_hoc = {dang_hoc}, type = {type(dang_hoc).__name__}")
 
 
 # TODO 2: Hoán đổi giá trị 2 biến KHÔNG dùng biến tạm
