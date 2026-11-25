@@ -34,7 +34,7 @@ print(f"Chu vi hình tròn: {chu_vi:.2f}")
 gia_goc = float(input("Nhập giá gốc (VNĐ): "))
 phan_tram_giam = float(input("Nhập phần trăm giảm giá: "))
 gia_sau_giam = gia_goc * (1 - phan_tram_giam / 100)
-print(f"Giá sau giảm: {gia_sau_giam:,.0f} VNĐ")
+print(f"Giá sau giảm: {gia_sau_giam:.2f} VNĐ")
 
 
 # TODO 4 (Thử thách): Máy đổi tiền
