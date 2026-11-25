@@ -95,6 +95,12 @@ python weeks/week-02-variables-types/practice/checks/check_practice.py --starter
 **Starter chưa sửa → FAIL có chủ đích**. Chỉ `--starter` mới kiểm bài em;
 `--solutions` chỉ kiểm lời giải tham khảo, không chứng minh đã làm bài.
 
+## Giao diện HTML thực hành
+
+Mở [giao diện Week 02](web/index.html) để dùng trực tiếp trên trình duyệt sau khi tải file về máy. Trang có thẻ sinh viên, nhận diện kiểu dữ liệu, chuyển đổi kiểu và máy tính hai số. Đây là giao diện minh họa bổ trợ, không thay thế ba bài Python gốc hoặc bộ chấm.
+
+Để xuất bản thành website bằng GitHub Pages: vào **Settings → Pages**, chọn **Deploy from a branch**, chọn branch **main** và thư mục **/docs**, rồi nhấn **Save**. File xuất bản là [docs/index.html](../../../docs/index.html); sau khi GitHub Pages hoàn tất triển khai, website sẽ có địa chỉ dạng `https://<tên-tài-khoản>.github.io/python-journey/`.
+
 ## Evidence
 
 - output `Week 02 solution checks: PASS`;
