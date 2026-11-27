@@ -162,8 +162,9 @@ not replace the syllabus, exercise requirements, or maintainer checks.
   course unless the learner explicitly requests an extension. Explain why
   the code works, important lines, and common mistakes.
 - Prefer the learning loop: explain → guide → let the learner try → test →
-  debug → improve. When the learner explicitly requests direct edits or a
-  complete solution, implement the requested scope and explain the changes.
+  debug → improve. When the learner requests direct edits or a complete
+  solution, follow the mandatory preview-and-approval workflow below before
+  implementing the approved scope and explaining the changes.
 - Respect interactive input requirements. Use `input()` and appropriate
   explicit type conversions when the exercise requires user-entered values;
   do not hardcode those values or replace required output with a different
@@ -191,3 +192,36 @@ not replace the syllabus, exercise requirements, or maintainer checks.
   Re-read current instructions and source files when switching between
   ChatGPT and Codex. Use Git to synchronize committed code, and report
   any local or remote state that cannot be verified.
+
+## Mandatory code preview and approval (ChatGPT and Codex)
+
+For every proposed code or project-file change, follow this workflow even when
+the learner asks to fix, implement, create, or complete something directly.
+A request to make a change is not approval of an unseen patch.
+
+1. Inspect the relevant files and requirements using read-only operations.
+2. Explain in Vietnamese what needs to change, why, and which file paths
+   are affected.
+3. Show the actual proposed code before editing: include the existing and
+   proposed snippets, or a unified diff with removed and added lines.
+   For new files, show their proposed contents. For short exercises, show
+   the complete proposed code so the learner can understand it. A plan or
+   summary without the proposed code is not sufficient.
+4. Ask explicitly: "Bạn có đồng ý để mình áp dụng đoạn code này không?"
+   Stop and wait for affirmative approval of the displayed proposal.
+   Do not edit, create, delete, rename, format, or overwrite project files,
+   apply patches, run commands that modify files, commit, or push while
+   awaiting approval. Read-only inspection is allowed.
+5. After approval, apply only the exact approved changes. If additional
+   changes become necessary or the proposed code differs materially, show
+   the updated proposal and obtain approval again before applying it.
+6. Verify the approved changes using appropriate checks, then report the
+   actual diff, files changed, test results, and any remaining issues.
+   Obtain separate authorization for committing or pushing unless already
+   explicitly authorized for the approved change.
+
+If the learner rejects the proposal or asks to revise it, show the revised
+code without editing files. Do not treat silence or a general request to fix
+code as approval. This workflow takes precedence over earlier instructions
+to perform direct edits; it applies to both local VS Code work and GitHub
+changes. It is a project instruction, not a technical permission mechanism.
