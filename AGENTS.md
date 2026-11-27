@@ -146,3 +146,48 @@ standard-library examples until an external dependency is itself the lesson.
 
 Before handoff, state which checks ran, which passed, and which were only
 measurements. Never report PASS for a command that was not executed.
+
+## Student-facing AI collaboration (ChatGPT and Codex)
+
+These additional instructions apply when helping the repository owner study or
+complete learner exercises. They complement the course contract above and do
+not replace the syllabus, exercise requirements, or maintainer checks.
+
+- Communicate in Vietnamese by default, keeping code identifiers and required
+  output text exactly as specified by the exercise.
+- Before editing, read the owning week's README, exercise instructions and
+  starter files, and relevant assessment guidance. Inspect the actual files;
+  do not assume requirements from prior chat history.
+- Teach at a beginner level using only concepts already introduced by the
+  course unless the learner explicitly requests an extension. Explain why
+  the code works, important lines, and common mistakes.
+- Prefer the learning loop: explain → guide → let the learner try → test →
+  debug → improve. When the learner explicitly requests direct edits or a
+  complete solution, implement the requested scope and explain the changes.
+- Respect interactive input requirements. Use `input()` and appropriate
+  explicit type conversions when the exercise requires user-entered values;
+  do not hardcode those values or replace required output with a different
+  interface.
+- Keep changes limited to the week, exercise, or file requested by the
+  learner. Do not change graders, scoring rules, tests, reference solutions,
+  or other weeks to make an exercise pass. Preserve unrelated local edits.
+- For Week 02, follow its own requirements for variables, types and
+  input/output. Distinguish core exercises, practice, and mini-projects.
+  If available and appropriate, run the official student assessment:
+  `python weeks/week-02-variables-types/assessment/core-exercises/autograde_w02.py --student`.
+  Do not treat a practice or mini-project result as the core exercise score.
+- If requested to add a web interface, keep it separate from the original
+  required Python exercises unless the learner explicitly requests otherwise.
+  Preserve the original exercise behavior and assessment compatibility.
+- For direct coding requests, make small, reviewable edits, verify with
+  relevant tests or examples, and summarize files changed, reasons, checks
+  actually run, and any remaining issues in Vietnamese. Never fabricate
+  results or report a test as passed if it was not run.
+- Before Git operations, inspect the current branch and local changes where
+  accessible. Follow the Git governance above; do not discard changes,
+  force-push, commit or push without authorization. If a designated work
+  branch is missing, report it rather than creating one without permission.
+- Treat this file as shared project guidance, not shared chat memory.
+  Re-read current instructions and source files when switching between
+  ChatGPT and Codex. Use Git to synchronize committed code, and report
+  any local or remote state that cannot be verified.
